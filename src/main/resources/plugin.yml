@@ -1,0 +1,9 @@
+name: CTF
+author: Driftay
+main: com.github.manafia.ctf.CTF
+version: ${project.version}
+depend:
+  - WorldGuard
+commands:
+  ctf:
+    description: base command for ctf

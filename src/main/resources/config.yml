@@ -1,0 +1,25 @@
+#Original Author - Driftay
+
+
+#<-------------------------------------->NOTES<-------------------------------------->#
+#All Color Codes Can Be Used!
+#Refer to: https://wiki.ess3.net/mc/
+#Enable and Disable Any Feature by Simply Switching Variable to true or false!
+#<-------------------------------------->NOTES<-------------------------------------->#
+
+CTF:
+  Region-Name: 'ctf' #What worldguard region name would we like to check for the point?
+  Block-Durability: 50 #How many times do we want players to mine the block before winning?
+  Block-Type: OBSIDIAN #Block Type You Would Like the Point To Be
+  Use-Particle-System: true
+  Particle-Name: 'flame'
+  #You can get any skull hash at https://minecraft-heads.com the "Value" should be the hash
+  Animation-Skull-Hash: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzg0MGI4N2Q1MjI3MWQyYTc1NWRlZGM4Mjg3N2UwZWQzZGY2N2RjYzQyZWE0NzllYzE0NjE3NmIwMjc3OWE1In19fQ=='
+  Admin-Permission: 'ctf.admin'
+  Block-Location:
+    x: 0.0
+    y: 70.0
+    z: 0.0
+    world: 'world'
+  Winning-Commands: #Commands Can Be a List!
+    - 'broadcast {player} won the event congrats!!'
