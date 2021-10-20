@@ -1,12 +1,12 @@
 package com.github.manafia.ctf;
 
-import com.sk89q.worldguard.bukkit.WorldGuardPlugin;
 import com.github.manafia.ctf.commands.CmdCTF;
 import com.github.manafia.ctf.file.CustomFile;
 import com.github.manafia.ctf.file.impl.MessageFile;
 import com.github.manafia.ctf.listeners.BlockBreakListener;
 import com.github.manafia.ctf.manager.Winner;
 import com.github.manafia.ctf.util.DataFile;
+import com.sk89q.worldguard.bukkit.WorldGuardPlugin;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;

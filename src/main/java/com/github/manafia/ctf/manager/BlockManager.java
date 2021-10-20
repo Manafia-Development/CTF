@@ -1,6 +1,5 @@
 package com.github.manafia.ctf.manager;
 
-import com.github.manafia.ctf.CTF;
 import com.github.manafia.ctf.util.Utils;
 import org.bukkit.Location;
 import org.bukkit.Material;

@@ -11,9 +11,9 @@ public class Logger {
 
     public enum PrefixType {
 
-        WARNING(ChatColor.RED + "WARNING: "), NONE(""), DEFAULT(ChatColor.GOLD + "[SaberCore] "), FAILED(ChatColor.RED + "FAILED: ");
+        WARNING(ChatColor.RED + "WARNING: "), NONE(""), DEFAULT(ChatColor.GOLD + "[CTF] "), FAILED(ChatColor.RED + "FAILED: ");
 
-        private String prefix;
+        private final String prefix;
 
         PrefixType(String prefix) {
             this.prefix = prefix;

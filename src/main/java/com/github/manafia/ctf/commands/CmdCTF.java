@@ -1,11 +1,11 @@
 package com.github.manafia.ctf.commands;
 
-import com.google.common.collect.Lists;
 import com.github.manafia.ctf.CTF;
 import com.github.manafia.ctf.manager.BlockManager;
 import com.github.manafia.ctf.manager.Winner;
 import com.github.manafia.ctf.util.Message;
 import com.github.manafia.ctf.util.Utils;
+import com.google.common.collect.Lists;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -31,7 +31,7 @@ public class CmdCTF implements CommandExecutor, TabCompleter {
                     p.sendMessage(Message.CTF_COMMAND_HELP.getMessage());
                     return true;
                 }
-                if(args[0].equalsIgnoreCase("reload")){
+                if (args[0].equalsIgnoreCase("reload")) {
                     if (!p.hasPermission(Utils.config.getString("CTF.Admin-Permission"))) {
                         p.sendMessage(Message.NO_PERMISSION.getMessage());
                         return true;
@@ -83,12 +83,12 @@ public class CmdCTF implements CommandExecutor, TabCompleter {
     }
 
     @Override
-    public List<String> onTabComplete(CommandSender sender, Command cmd, String label, String[] args){
+    public List<String> onTabComplete(CommandSender sender, Command cmd, String label, String[] args) {
         List<String> arguments = Arrays.asList("reload", "info", "start", "claim", "redeem", "set", "setblock");
         List<String> Flist = Lists.newArrayList();
-        if(args.length == 1){
-            for(String s : arguments){
-                if(s.toLowerCase().startsWith(args[0].toLowerCase()))Flist.add(s);
+        if (args.length == 1) {
+            for (String s : arguments) {
+                if (s.toLowerCase().startsWith(args[0].toLowerCase())) Flist.add(s);
             }
             return Flist;
         }

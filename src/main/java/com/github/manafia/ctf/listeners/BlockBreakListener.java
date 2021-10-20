@@ -1,12 +1,12 @@
 package com.github.manafia.ctf.listeners;
 
-import com.massivecraft.factions.util.XMaterial;
 import com.github.manafia.ctf.commands.CmdCTF;
 import com.github.manafia.ctf.manager.BlockManager;
 import com.github.manafia.ctf.manager.CTFRegion;
 import com.github.manafia.ctf.manager.Winner;
 import com.github.manafia.ctf.util.Message;
 import com.github.manafia.ctf.util.Utils;
+import com.massivecraft.factions.util.XMaterial;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
@@ -21,9 +21,9 @@ import static com.github.manafia.ctf.util.Utils.ctfBlockDurability;
 
 public class BlockBreakListener implements Listener {
 
-    private HashMap<String, Integer> timesMined = new HashMap<>();
-    private CTFRegion regions = new CTFRegion();
-    private Winner winner = new Winner();
+    private final HashMap<String, Integer> timesMined = new HashMap<>();
+    private final CTFRegion regions = new CTFRegion();
+    private final Winner winner = new Winner();
 
 
     @EventHandler

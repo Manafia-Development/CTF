@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.Set;
 
 public class DataFile {
-    private File file;
+    private final File file;
     private YamlConfiguration configuration;
 
     public DataFile(JavaPlugin plugin, String name) {

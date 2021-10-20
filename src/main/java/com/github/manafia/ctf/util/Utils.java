@@ -1,6 +1,9 @@
 package com.github.manafia.ctf.util;
 
-import org.bukkit.*;
+import org.bukkit.ChatColor;
+import org.bukkit.Effect;
+import org.bukkit.Location;
+import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.ArmorStand;
@@ -13,21 +16,17 @@ import org.bukkit.inventory.meta.SkullMeta;
 import org.bukkit.scheduler.BukkitRunnable;
 import org.bukkit.util.Vector;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import static com.github.manafia.ctf.CTF.instance;
 
 public class Utils {
 
 
     public static FileConfiguration config = instance.getConfig();
+    public static int ctfBlockDurability = config.getInt("CTF.Block-Durability");
 
     public static String color(String string) {
         return ChatColor.translateAlternateColorCodes('&', string);
     }
-
-    public static int ctfBlockDurability = config.getInt("CTF.Block-Durability");
 
     public static Location faceEntity(Location location, Entity entity) {
         Vector direction = location.toVector().subtract(entity.getLocation().toVector());
@@ -37,7 +36,7 @@ public class Utils {
     }
 
 
-    public static void spawnAnimation(Player p, Block block){
+    public static void spawnAnimation(Player p, Block block) {
         ArmorStand armorStand = block.getLocation().getWorld().spawn(
                 Utils.faceEntity((block.getLocation().add(0.5, 0.5, 0.5)), p), ArmorStand.class);
         armorStand.setVisible(false);
@@ -80,5 +79,5 @@ public class Utils {
 
         return itemStack;
     }
-    
+
 }

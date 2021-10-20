@@ -1,11 +1,11 @@
 package com.github.manafia.ctf.manager;
 
+import com.github.manafia.ctf.CTF;
+import com.github.manafia.ctf.util.Utils;
 import com.sk89q.worldguard.bukkit.WorldGuardPlugin;
 import com.sk89q.worldguard.protection.ApplicableRegionSet;
 import com.sk89q.worldguard.protection.managers.RegionManager;
 import com.sk89q.worldguard.protection.regions.ProtectedRegion;
-import com.github.manafia.ctf.CTF;
-import com.github.manafia.ctf.util.Utils;
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
 

@@ -10,7 +10,7 @@ public abstract class CustomFile {
 
     private YamlConfiguration config;
     private File file;
-    private File configFile;
+    private final File configFile;
 
     public CustomFile(CTF instance, String parent, String name) {
         if (!instance.getDataFolder().exists()) {
